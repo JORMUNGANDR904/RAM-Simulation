@@ -1,9 +1,6 @@
-# 📡 Comprehensive Guide to Radar Absorbing Materials (RAM) Theory
-**An Accessible, Technical Foundation for RF and EM Beginners**
+# 📡 Radar Absorbing Materials (RAM) Theory
 
----
-
-## 📘 1. Introduction: Taming Electromagnetic Reflections
+## 📘 1. Introduction: Electromagnetic Reflections
 
 When an electromagnetic (EM) wave—be it a radar pulse, a Wi-Fi signal, or a microwave—encounters a boundary between two different materials, its energy must be conserved. This results in three primary phenomena: **reflection**, **transmission**, and **absorption**.
 
