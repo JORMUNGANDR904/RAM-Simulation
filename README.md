@@ -44,7 +44,4 @@ Absorption peaks when:
 
 # 𝑍in≈𝑍0
 	​
-
-
-0
 	​
