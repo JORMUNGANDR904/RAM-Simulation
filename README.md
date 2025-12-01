@@ -5,11 +5,11 @@
 Radar Absorbing Materials reduce radar reflections by converting EM energy into heat.
 A simple but effective RAM consists of:
 
-1. # A lossy dielectric layer, and
+1. A lossy dielectric layer, and
 
-2. # A metal backing (PEC) to block transmission.
+2. A metal backing (PEC) to block transmission.
 
-3. # The reflection from the surface is minimized when the material’s input impedance approaches free-space impedance.
+3. The reflection from the surface is minimized when the material’s input impedance approaches free-space impedance.
 
 
 # 2. Theory Summary
