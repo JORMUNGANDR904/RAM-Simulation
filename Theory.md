@@ -39,43 +39,43 @@ By forcing the energy to stay and travel within the lossy layer, the material ca
 
 ## 🧠 3. Material Properties: Permittivity and Permeability
 
-The ability of a material to interact with an EM wave is described by its **complex constitutive parameters**: **permittivity** (\(\varepsilon\)) and **permeability** (\(\mu\)). For effective absorption, the material must exhibit EM **losses**.
+The ability of a material to interact with an EM wave is described by its **complex constitutive parameters**: **permittivity** $(\varepsilon)$ and **permeability** $(\mu)$. For effective absorption, the material must exhibit EM **losses**.
 
-### 3.1 Complex Permittivity (\(\varepsilon\))
+### 3.1 Complex Permittivity $(\varepsilon)$
 
 The material's response to the electric field component is described by:
 
-\[
+$$
 \varepsilon = \varepsilon' - j \varepsilon'' = \varepsilon_0 (\varepsilon_r' - j \varepsilon_r'')
-\]
+$$
 
-- **Real Part (\(\varepsilon'\) or \(\varepsilon_r'\))**: Energy storage in the electric field (like a capacitor).  
-- **Imaginary Part (\(\varepsilon''\) or \(\varepsilon_r''\))**: Energy dissipation (converted to heat) due to conduction or polarization losses.
+- **Real Part $(\varepsilon'$ or $\varepsilon_r')$**: Energy storage in the electric field (like a capacitor).  
+- **Imaginary Part $(\varepsilon''$ or $\varepsilon_r'')$**: Energy dissipation (converted to heat) due to conduction or polarization losses.
 
 ---
 
-### 3.2 Loss Tangent (\(\tan \delta\))
+### 3.2 Loss Tangent $(\tan \delta)$
 
 A key figure of merit for dielectric absorbers:
 
-\[
+$$
 \tan \delta_e = \frac{\varepsilon''}{\varepsilon'}
-\]
+$$
 
 - A **high loss tangent** is essential for strong absorption.  
-- Conductive fillers (like carbon black) are often added to increase \(\varepsilon''\).
+- Conductive fillers (like carbon black) are often added to increase $\varepsilon''$.
 
 ---
 
-### 3.3 Complex Permeability (\(\mu\))
+### 3.3 Complex Permeability $(\mu)$
 
 For advanced RAMs using magnetic materials:
 
-\[
+$$
 \mu = \mu' - j \mu'' = \mu_0 (\mu_r' - j \mu_r'')
-\]
+$$
 
-- **Magnetic Loss (\(\mu''\))**: Dissipates energy from the magnetic field.  
+- **Magnetic Loss $(\mu'')$**: Dissipates energy from the magnetic field.  
 - Magnetic RAMs can achieve **low-frequency absorption** in thinner layers compared to purely dielectric absorbers.
 
 ---
@@ -86,19 +86,19 @@ Minimizing reflection relies on **impedance matching**.
 
 ### 4.1 Wave Impedance
 
-Impedance \(Z\) is the ratio of the electric field to the magnetic field in a wave:
+Impedance $Z$ is the ratio of the electric field to the magnetic field in a wave:
 
 - **Free-space impedance**:
 
-\[
+$$
 Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}} \approx 377\,\Omega
-\]
+$$
 
 - **Characteristic impedance of the material**:
 
-\[
+$$
 Z_c = Z_0 \sqrt{\frac{\mu_r}{\varepsilon_r}}
-\]
+$$
 
 ---
 
@@ -106,9 +106,9 @@ Z_c = Z_0 \sqrt{\frac{\mu_r}{\varepsilon_r}}
 
 Reflection occurs due to impedance mismatch. To minimize reflection:
 
-\[
+$$
 Z_{\text{RAM}} \approx Z_{\text{Air}} \quad \Rightarrow \quad \mu_r \approx \varepsilon_r
-\]
+$$
 
 - The best wideband RAMs are **impedance-matched at the surface** and lossy throughout the volume.
 
@@ -118,14 +118,14 @@ Z_{\text{RAM}} \approx Z_{\text{Air}} \quad \Rightarrow \quad \mu_r \approx \var
 
 The **Quarter-Wave Principle** cancels residual reflection at a target frequency.
 
-- Reflections from the **front surface** (\(R_1\)) and **backing PEC** (\(R_2\)) interfere destructively.  
-- If the layer thickness \(t\) is **quarter-wavelength** in the material (\(\lambda_\text{material}/4\)):
+- Reflections from the **front surface** $(R_1)$ and **backing PEC** $(R_2)$ interfere destructively.  
+- If the layer thickness $t$ is **quarter-wavelength** in the material $(\lambda_\text{material}/4)$:
 
-\[
+$$
 t \approx \frac{\lambda_0}{4 \sqrt{|\varepsilon_r \mu_r|}}
-\]
+$$
 
-- \(R_1\) and \(R_2\) are **180° out of phase**, achieving destructive interference.  
+- $R_1$ and $R_2$ are **180° out of phase**, achieving destructive interference.  
 
 > **Beginner's Takeaway:** The thickness is tuned so that the wave bouncing off the front and the wave bouncing off the metal cancel each other out perfectly.
 
@@ -133,40 +133,40 @@ t \approx \frac{\lambda_0}{4 \sqrt{|\varepsilon_r \mu_r|}}
 
 ## 📊 6. Key Equations for RAM Analysis
 
-### 6.1 Input Impedance (\(Z_\text{in}\))
+### 6.1 Input Impedance $(Z_\text{in})$
 
 For a single layer backed by PEC:
 
-\[
+$$
 Z_\text{in} = Z_c \tanh(\gamma t)
-\]
+$$
 
-- \(Z_c\): Characteristic impedance  
-- \(t\): Layer thickness  
-- \(\gamma = j\omega \sqrt{\mu \varepsilon}\): Propagation constant
+- $Z_c$: Characteristic impedance  
+- $t$: Layer thickness  
+- $\gamma = j\omega \sqrt{\mu \varepsilon}$: Propagation constant
 
 ---
 
-### 6.2 Reflection Coefficient (\(\Gamma\) or \(S_{11}\))
+### 6.2 Reflection Coefficient $(\Gamma$ or $S_{11})$
 
 Voltage reflection coefficient at the air-RAM interface:
 
-\[
+$$
 \Gamma = S_{11} = \frac{Z_\text{in} - Z_0}{Z_\text{in} + Z_0}
-\]
+$$
 
 ---
 
-### 6.3 Absorption (\(A\))
+### 6.3 Absorption $(A)$
 
-Since \(T = 0\) (PEC backing):
+Since $T = 0$ (PEC backing):
 
-\[
+$$
 A = 1 - |\Gamma|^2 = 1 - |S_{11}|^2
-\]
+$$
 
-- **Perfect Absorption:** \(A=1 \Rightarrow \Gamma=0\)  
-- **No Absorption:** \(A=0 \Rightarrow |\Gamma|=1\)
+- **Perfect Absorption:** $A=1 \Rightarrow \Gamma=0$  
+- **No Absorption:** $A=0 \Rightarrow |\Gamma|=1$
 
 ---
 
@@ -174,22 +174,22 @@ A = 1 - |\Gamma|^2 = 1 - |S_{11}|^2
 
 Electromagnetic simulations provide key performance indicators:
 
-### 7.1 Reflection Coefficient (S\(_{11}\)) Plot
+### 7.1 Reflection Coefficient $(S_{11})$ Plot
 
 - Measured in **decibels (dB)**:
 
-\[
+$$
 \text{Return Loss (dB)} = 20 \log_{10} |S_{11}|
-\]
+$$
 
 - **−10 dB:** 10% power reflected (90% absorbed)  
 - **−20 dB:** 1% power reflected (99% absorbed)
 
 ### 7.2 Absorption Curve
 
-\[
+$$
 A = 1 - |S_{11}|^2
-\]
+$$
 
 Shows the percentage of energy dissipated.
 
@@ -225,7 +225,7 @@ Shows the percentage of energy dissipated.
 ## 🧩 9. Summary for Complete Beginners
 
 - **Goal:** Stop the wave from reflecting back.  
-- **Entrance:** Impedance-matched surface (\(Z_\text{RAM} \approx Z_\text{Air}\)).  
+- **Entrance:** Impedance-matched surface $(Z_\text{RAM} \approx Z_\text{Air})$.  
 - **Journey:** Lossy material converts EM energy to heat.  
 - **Trick:** Layer thickness creates **destructive interference**, canceling residual reflections.  
 
