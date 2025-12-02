@@ -219,11 +219,10 @@ Shows the percentage of energy dissipated.
 
 ---
 
-## 🧩 9. Summary for Complete Beginners
+## 🧩 9. Summary 
 
 - **Goal:** Stop the wave from reflecting back.  
 - **Entrance:** Impedance-matched surface $(Z_\text{RAM} \approx Z_\text{Air})$.  
 - **Journey:** Lossy material converts EM energy to heat.  
 - **Trick:** Layer thickness creates **destructive interference**, canceling residual reflections.  
 
-By understanding **impedance matching**, **material losses**, and **destructive interference**, you can design, analyze, and optimize Radar Absorbing Materials.
