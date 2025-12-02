@@ -1,23 +1,21 @@
-# Test of GitHub Math Rendering
+# Test of GitHub Math Rendering (Version 2)
 
-This is inline math: \( Z = \sqrt{\mu / \varepsilon} \).
+Inline-style math using single-dollar syntax:
 
-This is block math (single-line):
+$Z = \sqrt{\mu / \varepsilon}$
+
+Another:
+
+$\Gamma = \frac{Z_{\text{in}} - Z_0}{Z_{\text{in}} + Z_0}$
+
+Permittivity:
+
+$\varepsilon_r = \varepsilon' - j\varepsilon''$
+
+Block math using $$ $$:
 
 $$ Z = \sqrt{\frac{\mu}{\varepsilon}} $$
 
-Another block equation:
-
-$$ \Gamma = \frac{Z_{\text{in}} - Z_0}{Z_{\text{in}} + Z_0} $$
-
-A longer expression:
-
-$$ \varepsilon_r = \varepsilon' - j\varepsilon'' $$
-
-A heading:
-
-## Quarter-Wave Condition
-
-The quarter-wave resonance condition is:
+Quarter-wave condition:
 
 $$ d = \frac{\lambda}{4 \sqrt{\varepsilon_r}} $$
